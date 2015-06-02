@@ -7,7 +7,20 @@
 	<script src="jquery.js"></script>
 	<script src="validate.js"></script>
 	
-	<script>g</script>
+	<script>
+	$(document).ready(function() {
+		$("#fileForm").validate({
+			rules:{
+				nombre:"required",
+				jungle:"required"
+			},
+			messages:{
+				nombre:"Ingrese Nombre",
+				jungle:"Escoja una Opcion"
+			}
+		});
+	});
+	</script>
 </head>
 <body>
 <form class="cmxform" id="fileForm" method="post" action="">
